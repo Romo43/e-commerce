@@ -9,6 +9,7 @@ class Server {
     constructor() {
         this.app = express();
         this.port = config.PORT;
+        this.env = config.NODE_ENV;
         this.paths = {
             user: "/api/users"
         };
@@ -44,6 +45,7 @@ class Server {
     Listen() {
         this.app.listen(this.port, () => {
             console.log(`Server running on port ${this.port}`);
+            //console.log(`NODE_ENV = ${this.env}`);
         });
     }
 }
