@@ -4,32 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
-<body id="myId"> 
-    <section class="register-account"> 
-        <div class="signform">      
-            <div class="left"><a href="#" style="float:right;margin-right:35px;font-size: 0.9em;" class="bts-a">Don't have an account? Sign up!</a>
-                <div class="bts">
-                    <a href="#" class="fblogin social"><i class="fa fa-facebook"></i><span>Sign in with Facebook</span></a>
-                    <a href="#" class="twlogin social"><i class="fa fa-twitter"></i><span>Sign in with Twitter</span></a>
-                    <a href="#" class="gplogin social"><i class="fa fa-google-plus"></i><span>Sign in with Google</span></a>             
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card border-0 shadow rounded-3 my-5">
+                    <div class="card-body p-4 p-sm-5">
+                        <h5 class="card-title text-center mb-5 fw-light fs-5">Login</h5>
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                                <label class="form-check-label" for="rememberPasswordCheck">
+                                Remember password
+                                </label>
+                            </div>
+                            <div class="d-grid mb-3">
+                                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                                in</button>
+                            </div>
+                            <hr class="my-4">
+                            <div class="d-grid mb-3">
+                                <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
+                                <i class="fab fa-google me-2"></i> Sign in with Google
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="right">
-                <div class="headit">
-                    <h4>Login To Your Account</h4>
-                </div>
-                <div class="form">
-                    <form class="login-form" id="login-form">
-                        <input type="text" placeholder="User Name"/>
-                        <input type="password" placeholder="Password"/>        
-                        <input class="subbt" type="submit" value="Sign In" style="border:none;"/>   
-                    </form>
-                    <input type="checkbox" id="remember" name="remember"><span style="color:#b6b6b6;font-size: 0.9em;"> Remember Me</span><a href="#">Forgot your password?</a>        
-                </div>
-            </div>       
         </div>
-    </section>
-</body> 
-</html>
+    </div>
+</body>
+</html> 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Signin</title>
+    <meta name="google-signin-client_id" content="117101541181-nrr5p3532sqanhbnpncre8qptdgh6no4.apps.googleusercontent.com">
+</head>
+<body>
+    <h1>Google Signin</h1>
+    <hr>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <a href="#" onclick="signOut();">Sign out</a>
+    <script src="script.js"></script>
+</body>
+</html> -->
